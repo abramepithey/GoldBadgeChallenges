@@ -13,5 +13,6 @@ namespace _02_Claim.Interfaces
         void CreateNewClaim(Claim newClaim);
         int GetClaimCount();
         double RoundDoubleForDisplay(double fullDouble);
+        void DeleteNextClaim();
     }
 }

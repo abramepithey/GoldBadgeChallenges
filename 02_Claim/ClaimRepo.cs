@@ -16,6 +16,11 @@ namespace _02_Claim
             _claimRepo.Add(newClaim);
         }
 
+        public void DeleteNextClaim()
+        {
+            _claimRepo.RemoveAt(0);
+        }
+
         public List<Claim> GetAllClaims()
         {
             return _claimRepo;
@@ -29,7 +34,10 @@ namespace _02_Claim
 
         public Claim GetNextClaim()
         {
-            return _claimRepo[0];
+            if (GetClaimCount() > 0)
+                return _claimRepo[0];
+            else
+                return null;
         }
 
         public double RoundDoubleForDisplay(double fullDouble)

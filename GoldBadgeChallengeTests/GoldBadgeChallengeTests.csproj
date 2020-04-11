@@ -54,17 +54,20 @@
     <Compile Include="04_Outing_Tests\04_Outing_Repo_Tests.cs" />
     <Compile Include="04_Outing_Tests\04_Outing_ProgramUI_Tests.cs" />
     <Compile Include="02_Claim_Tests\02_Claim_Repo_Tests.cs" />
-    <Compile Include="02_Claim_Tests\02_Claim_ProgramUI_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\02_Claim\02_Claim.csproj">
+      <Project>{F9E76AE2-8CB6-4821-AAD8-BF92514D1A3A}</Project>
+      <Name>02_Claim</Name>
+    </ProjectReference>
     <ProjectReference Include="..\04_Outing\04_Outing.csproj">
       <Project>{D5E26F0E-69C2-4E7B-A65F-DF97E2F644AF}</Project>
       <Name>04_Outing</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GoldBadgeChallenges\01_Cafe.csproj">
+    <ProjectReference Include="..\01_Cafe\01_Cafe.csproj">
       <Project>{82ABF7BB-809E-4564-A47F-6EF8B14F79F5}</Project>
       <Name>01_Cafe</Name>
     </ProjectReference>

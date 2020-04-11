@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GoldBadgeChallenges;
+using _01_Cafe;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GoldBadgeChallengeTests
@@ -50,10 +50,10 @@ namespace GoldBadgeChallengeTests
         public void DeleteMenuItemByName_ItemWasDeleted(int testnum)
         {
             MenuItem newItem = new MenuItem();
-            newItem.MealName = "chicken";
+            newItem.MealName = "chicken1";
 
             MenuItem newItemOne = new MenuItem();
-            newItemOne.MealName = "chicken";
+            newItemOne.MealName = "chicken2";
             MenuItem newItemTwo = new MenuItem();
             newItemTwo.MealName = "chicken";
             MenuItem newItemThree = new MenuItem();
